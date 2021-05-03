@@ -503,7 +503,7 @@ elif session_state.page_number == 2:
     row18_space1, row18_1, row18_space2 = st.beta_columns([0.1, 1, 0.2])
     with row18_1:
         st.image(
-            "images/psm.jpg", width=1500)
+            "images/psm.jpg", width=800)
 
     row19_space1, row19_1, row19_space2 = st.beta_columns([2.1, 1, 2])
     with row19_1:
