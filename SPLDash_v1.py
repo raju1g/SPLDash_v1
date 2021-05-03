@@ -141,7 +141,7 @@ if session_state.page_number == 1:
             color="State",
             color_discrete_map={'(?)': 'grey', 'Voitto': '#2ca02c', 'Hävi': '#d62728',
                                 'Tasapeli': 'yellow', 'Ei aloitettu': 'lightgrey'},
-            hover_data={'Tehtävät': '%{Tasks}', 'Kommentti': '%{Kommentti}'}
+            hover_data={'Tasks': '%{Tasks}', 'Kommentti': '%{Kommentti}'}
         )
         fig_02.update_layout(margin=dict(t=10, l=10, r=10, b=10))
         fig_02.update_layout(width=300, height=300, showlegend=False, font_size=8)
