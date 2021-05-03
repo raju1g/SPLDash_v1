@@ -110,19 +110,19 @@ if session_state.page_number == 1:
         sizes_01 = [6, 11]
         fig_01 = go.Figure(
             go.Bar(x=x_01, y=[1], name='Voitto', texttemplate="%{y}<br>Voitto",
-                   hovertemplate="<br>".join(["Tehtävät: %{---}"]), textposition="inside", textangle=0,
+                   hovertemplate="<br>".join(["Mittarit: %y"]), textposition="inside", textangle=0,
                    textfont_color="white", marker_color='#2ca02c'))
         fig_01.add_trace(
             go.Bar(x=x_01, y=[1], name='Hävi', texttemplate="%{y}<br>Häviö",
-                   hovertemplate="<br>".join(["Tehtävät: %{---}"]), textposition="inside", textangle=0,
+                   hovertemplate="<br>".join(["Mittarit: %y"]), textposition="inside", textangle=0,
                    textfont_color="white", marker_color='#d62728'))
         fig_01.add_trace(
             go.Bar(x=x_01, y=[1], name='Jatkuva', texttemplate="%{y}<br>Tasapeli",
-                   hovertemplate="<br>".join(["Tehtävät: %{---}"]), textposition="inside", textangle=0,
+                   hovertemplate="<br>".join(["Mittarit: %y"]), textposition="inside", textangle=0,
                    textfont_color="#4f6994", marker_color='yellow'))
         fig_01.add_trace(
             go.Bar(x=x_01, y=[5], name='Aloita', texttemplate="%{y}<br>Kesken",
-                   hovertemplate="<br>".join(["Tehtävät: %{---}"]), textposition="inside", textangle=0,
+                   hovertemplate="<br>".join(["Mittarit: %y"]), textposition="inside", textangle=0,
                    textfont_color="#4f6994",marker_color='lightgrey'))
         fig_01.update_xaxes(
             showline=True, linewidth=0.25, linecolor='#4f6994', mirror=False)
