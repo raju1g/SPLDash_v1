@@ -538,7 +538,7 @@ elif session_state.page_number == 2:
                 go.Scatter(x=[1992, 2020], y=[57, 57], fill='tozeroy', mode='none',
                            fillcolor='rgba(255, 255, 0, 0.15)'))
             fig_11.add_trace(
-                go.Scatter(x=[1992, 2020], y=[54, 54], fill='tozeroy', mode='none', fillcolor='rgba(0, 128, 0, 0.3)'))
+                go.Scatter(x=[1992, 2020], y=[50, 50], fill='tozeroy', mode='none', fillcolor='rgba(0, 128, 0, 0.3)'))
             fig_11.update_traces(marker=dict(size=50, line=dict(width=2, color='#4f6994')),
                                  selector=dict(mode='markers'))
             fig_11.update_traces(
