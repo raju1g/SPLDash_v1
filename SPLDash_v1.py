@@ -572,10 +572,10 @@ elif session_state.page_number == 2:
             fig_12.add_trace(
                 go.Scatter(x=year5, y=rank2, line=dict(color='#4f6994', width=1.5), mode='markers+lines'))
             fig_12.add_trace(
-                go.Scatter(x=[2003, 2020], y=[27, 27], fill='tozeroy', mode='none',
+                go.Scatter(x=[2003, 2020], y=[30, 30], fill='tozeroy', mode='none',
                            fillcolor='rgba(255, 255, 0, 0.15)'))
             fig_12.add_trace(
-                go.Scatter(x=[2003, 2020], y=[20, 20], fill='tozeroy', mode='none', fillcolor='rgba(0, 128, 0, 0.3)'))
+                go.Scatter(x=[2003, 2020], y=[25, 25], fill='tozeroy', mode='none', fillcolor='rgba(0, 128, 0, 0.3)'))
             fig_12.update_traces(
                 marker=dict(size=50, line=dict(width=2, color='#4f6994')), selector=dict(mode='markers'))
             fig_12.update_traces(
