@@ -132,7 +132,9 @@ if session_state.page_number == 1:
         fig_01.update_layout(
             barmode='stack', xaxis={'categoryorder': 'total descending'}, showlegend=False,
             uniformtext=dict(mode="hide", minsize=8), title_font_size=42, font_size=18, title_font_family='Arial',
-            paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)', xaxis_showgrid=False, yaxis_showgrid=False)
+            paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)', xaxis_showgrid=False, yaxis_showgrid=False,
+            hoverlabel_align='right',
+        )
         st.plotly_chart(fig_01, use_container_width=True)
 
         fig_02 = px.sunburst(
