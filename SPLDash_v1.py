@@ -127,8 +127,8 @@ if session_state.page_number == 1:
             go.Bar(x=x_01, y=[5], name='Aloita',
                    texttemplate="%{y}<br>"+"Fifaan vaikuttaminen<br>Suunnitellaan ratkaisuja"
                                 "<br>Aktiivinen kehitysvaihe<br>Selvitetään haasteet<br>Määrittelytyö",
-                   hovertemplate="Fifaan vaikuttaminen<br>Suunnitellaan ratkaisuja"
-                                 "<br>Aktiivinen kehitysvaihe<br>Selvitetään haasteet<br>Määrittelytyö",
+                   hovertemplate="<b>Fifaan vaikuttaminen<br>Suunnitellaan ratkaisuja"
+                                 "<br>Aktiivinen kehitysvaihe<br>Selvitetään haasteet<br>Määrittelytyö</b>",
                    textposition="inside", textangle=0,
                    textfont_color="#4f6994",marker_color='lightgrey'))
         fig_01.update_xaxes(
@@ -140,7 +140,7 @@ if session_state.page_number == 1:
             barmode='stack', xaxis={'categoryorder': 'total descending'}, showlegend=False,
             uniformtext=dict(mode="hide", minsize=8), title_font_size=42, font_size=18, title_font_family='Arial',
             paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)', xaxis_showgrid=False, yaxis_showgrid=False,
-            hoverlabel_align='left',
+            hoverlabel_align='right',
         )
         st.plotly_chart(fig_01, use_container_width=True)
 
