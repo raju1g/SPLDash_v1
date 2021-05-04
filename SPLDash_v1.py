@@ -109,26 +109,25 @@ if session_state.page_number == 1:
         x_01 = ['']
         sizes_01 = [6, 11]
         fig_01 = go.Figure(
-            go.Bar(x=x_01, y=[1], name='Voitto', texttemplate="%{y}<br>Määrittely",
-                   hovertemplate="<b> Määrittely</b><br><br>",
+            go.Bar(x=x_01, y=[1], name='Voitto', texttemplate="<b>%{y}</b>",
+                   hovertemplate="<b>1. Määrittely</b><br><br>",
                    textposition="inside", textangle=0,
                    textfont_color="white", marker_color='#2ca02c'))
         fig_01.add_trace(
-            go.Bar(x=x_01, y=[1], name='Hävi', texttemplate="%{y}<br>Nettisivut",
-                   hovertemplate="<b> Nettisivut</b><br><br>",
+            go.Bar(x=x_01, y=[1], name='Hävi', texttemplate="<b>%{y}</b>",
+                   hovertemplate="<b>1. Nettisivut</b><br><br>",
                    textposition="inside", textangle=0,
                    textfont_color="white", marker_color='#d62728'))
         fig_01.add_trace(
-            go.Bar(x=x_01, y=[1], name='Jatkuva', texttemplate="%{y}<br>"+"Kilpailutusvalinta",
-                   hovertemplate="<b> Kilpailutusvalinta</b><br><br>",
+            go.Bar(x=x_01, y=[1], name='Jatkuva', texttemplate="<b>%{y}</b>",
+                   hovertemplate="<b>1. Kilpailutusvalinta</b><br><br>",
                    textposition="inside", textangle=0,
                    textfont_color="#4f6994", marker_color='yellow'))
         fig_01.add_trace(
             go.Bar(x=x_01, y=[5], name='Aloita',
-                   texttemplate="%{y}<br>"+"Fifaan vaikuttaminen<br>Suunnitellaan ratkaisuja"
-                                "<br>Aktiivinen kehitysvaihe<br>Selvitetään haasteet<br>Määrittelytyö",
-                   hovertemplate="<b>Fifaan vaikuttaminen<br>Suunnitellaan ratkaisuja"
-                                 "<br>Aktiivinen kehitysvaihe<br>Selvitetään haasteet<br>Määrittelytyö</b>",
+                   texttemplate="<b>%{y}</b>",
+                   hovertemplate="<b>1. Fifaan vaikuttaminen<br>2. Suunnitellaan ratkaisuja"
+                                 "<br>3. Aktiivinen kehitysvaihe<br>4. Selvitetään haasteet<br>5. Määrittelytyö</b>",
                    textposition="inside", textangle=0,
                    textfont_color="#4f6994",marker_color='lightgrey'))
         fig_01.update_xaxes(
@@ -140,7 +139,7 @@ if session_state.page_number == 1:
             barmode='stack', xaxis={'categoryorder': 'total descending'}, showlegend=False,
             uniformtext=dict(mode="hide", minsize=8), title_font_size=42, font_size=18, title_font_family='Arial',
             paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)', xaxis_showgrid=False, yaxis_showgrid=False,
-            hoverlabel_align='right',
+            hoverlabel_align='left',
         )
         st.plotly_chart(fig_01, use_container_width=True)
 
