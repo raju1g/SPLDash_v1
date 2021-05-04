@@ -152,7 +152,7 @@ if session_state.page_number == 1:
             hover_name=df_01['Kommentti']
         )
         fig_02.update_traces(
-            go.Sunburst(hovertemplate="<b>%{Kommentti}</b><br><br>"+"%{id}"),
+            go.Sunburst(hovertemplate="<b>%{hovertext}</b><br><br>"+"%{id}"),
             insidetextorientation='radial',
         )
         fig_02.update_layout(margin=dict(t=10, l=10, r=10, b=10))
