@@ -133,7 +133,7 @@ if session_state.page_number == 1:
             barmode='stack', xaxis={'categoryorder': 'total descending'}, showlegend=False,
             uniformtext=dict(mode="hide", minsize=8), title_font_size=42, font_size=18, title_font_family='Arial',
             paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)', xaxis_showgrid=False, yaxis_showgrid=False,
-            hoverlabel_align='right',
+            hoverlabel_align='left',
         )
         st.plotly_chart(fig_01, use_container_width=True)
 
