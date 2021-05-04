@@ -110,7 +110,8 @@ if session_state.page_number == 1:
         sizes_01 = [6, 11]
         fig_01 = go.Figure(
             go.Bar(x=x_01, y=[1], name='Voitto', texttemplate="%{y}<br>Voitto",
-                   hovertemplate="<br>".join(["Mittarit: %{y}"]), textposition="inside", textangle=0,
+                   hovertemplate="<b> Määrittely: %{y}</b><br><br>",
+                   textposition="inside", textangle=0,
                    textfont_color="white", marker_color='#2ca02c'))
         fig_01.add_trace(
             go.Bar(x=x_01, y=[1], name='Hävi', texttemplate="%{y}<br>Häviö",
