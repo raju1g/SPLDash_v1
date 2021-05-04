@@ -149,7 +149,7 @@ if session_state.page_number == 1:
             color="State",
             color_discrete_map={'(?)': 'grey', 'Voitto': '#2ca02c', 'Hävi': '#d62728',
                                 'Tasapeli': 'yellow', 'Ei aloitettu': 'lightgrey'},
-            hover_data=df_01['Kommentti']
+            hover_name=df_01['Kommentti']
         )
         fig_02.update_traces(
             go.Sunburst(hovertemplate='<b>%{id}</b> <br>'),
