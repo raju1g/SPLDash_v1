@@ -109,21 +109,27 @@ if session_state.page_number == 1:
         x_01 = ['']
         sizes_01 = [6, 11]
         fig_01 = go.Figure(
-            go.Bar(x=x_01, y=[1], name='Voitto', texttemplate="%{y}<br>Voitto",
-                   hovertemplate="<b> Määrittely: %{y}</b><br><br>",
+            go.Bar(x=x_01, y=[1], name='Voitto', texttemplate="%{y}<br>Määrittely",
+                   hovertemplate="<b> Määrittely</b><br><br>",
                    textposition="inside", textangle=0,
                    textfont_color="white", marker_color='#2ca02c'))
         fig_01.add_trace(
-            go.Bar(x=x_01, y=[1], name='Hävi', texttemplate="%{y}<br>Häviö",
-                   hovertemplate="<br>".join(["Mittarit: %{y}"]), textposition="inside", textangle=0,
+            go.Bar(x=x_01, y=[1], name='Hävi', texttemplate="%{y}<br>Nettisivut",
+                   hovertemplate="<b> Nettisivut</b><br><br>",
+                   textposition="inside", textangle=0,
                    textfont_color="white", marker_color='#d62728'))
         fig_01.add_trace(
-            go.Bar(x=x_01, y=[1], name='Jatkuva', texttemplate="%{y}<br>Tasapeli",
-                   hovertemplate="<br>".join(["Mittarit: %{y}"]), textposition="inside", textangle=0,
+            go.Bar(x=x_01, y=[1], name='Jatkuva', texttemplate="%{y}<br>Kilpailutusvalinta",
+                   hovertemplate="<b> Kilpailutusvalinta</b><br><br>",
+                   textposition="inside", textangle=0,
                    textfont_color="#4f6994", marker_color='yellow'))
         fig_01.add_trace(
-            go.Bar(x=x_01, y=[5], name='Aloita', texttemplate="%{y}<br>Kesken",
-                   hovertemplate="<br>".join(["Mittarit: %{y}"]), textposition="inside", textangle=0,
+            go.Bar(x=x_01, y=[5], name='Aloita',
+                   texttemplate="%{y}<br>Fifaan vaikuttaminen<br>Suunnitellaan ratkaisuja"
+                                "<br>Aktiivinen kehitysvaihe<br>Selvitetään haasteet<br>Määrittelytyö",
+                   hovertemplate="Fifaan vaikuttaminen<br>Suunnitellaan ratkaisuja"
+                                 "<br>Aktiivinen kehitysvaihe<br>Selvitetään haasteet<br>Määrittelytyö",
+                   textposition="inside", textangle=0,
                    textfont_color="#4f6994",marker_color='lightgrey'))
         fig_01.update_xaxes(
             showline=True, linewidth=0.25, linecolor='#4f6994', mirror=False)
