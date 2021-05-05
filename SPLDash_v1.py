@@ -235,16 +235,18 @@ if session_state.page_number == 1:
                 finish = df_02['Loppunut']
                 complete = df_02['Valmistuminen']
                 status = df_02['State']
+                comments = df_02['Kommentti']
+                objs = df_02['Toivoteet']
                 colors = {'Voitto': '#2ca02c', 'Häviö': '#d62728', 'Tasapeli': 'yellow', 'Ei aloitettu': 'lightgrey'}
-                fig_03 = px.timeline(
-                    df_02, x_start=start, x_end=finish, y=tasks, color=status, color_discrete_map=colors)
-                fig_03.add_shape(
-                    type='line', x0='2021-05-01', y0=-0.5, x1='2021-05-01', y1='Kilpailutusvalinta',
-                    line=dict(color='#4f6994', width=1.25, dash="dot"))
-                fig_03.update_yaxes(autorange='reversed')
-                fig_03.update_layout(
-                    font_size=18, paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)',
-                    xaxis_showgrid=False, yaxis_showgrid=False, showlegend=False)
+                fig_03 = px.timeline(df_02, x_start=start, x_end=finish, y=tasks, color=status,
+                                     color_discrete_map=colors, text=objs)
+                fig_03.add_shape(type='line', x0='2021-05-01', y0=-0.5, x1='2021-05-01',
+                                 y1='Aktiivinen kehitysvaihe II', line=dict(color='#4f6994', width=1.25, dash="dot"))
+                fig_03.update_xaxes(showline=True, linewidth=0.25, linecolor='#4f6994', mirror=False, visible=True)
+                fig_03.update_yaxes(autorange='reversed', visible=False)
+                fig_03.update_yaxes(showline=True, linewidth=0.25, linecolor='#4f6994', mirror=True)
+                fig_03.update_layout(font_size=12, paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)',
+                                     xaxis_showgrid=True, yaxis_showgrid=False, showlegend=False)
                 st.plotly_chart(fig_03, use_container_width=True)
 
             row09_space1, row09_1, row09_space2 = st.beta_columns([1.5, 1, 1])
