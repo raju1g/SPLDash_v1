@@ -245,7 +245,7 @@ if session_state.page_number == 1:
                 fig_03.update_xaxes(showline=True, linewidth=0.25, linecolor='#4f6994', mirror=False, visible=True)
                 fig_03.update_yaxes(autorange='reversed', visible=False)
                 fig_03.update_yaxes(showline=True, linewidth=0.25, linecolor='#4f6994', mirror=True)
-                fig_03.update_layout(font_size=12, paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)',
+                fig_03.update_layout(font_size=16, paper_bgcolor='rgba(0,0,0,0)', plot_bgcolor='rgba(0,0,0,0)',
                                      xaxis_showgrid=True, yaxis_showgrid=False, showlegend=False)
                 st.plotly_chart(fig_03, use_container_width=True)
 
