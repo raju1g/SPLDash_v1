@@ -58,7 +58,7 @@ st.set_page_config(
     page_title="SPL Dashboard",
     page_icon="images/favicon.ico",
     layout='wide',
-    initial_sidebar_state='auto'
+    initial_sidebar_state='expanded'
     )
 
 
