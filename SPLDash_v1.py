@@ -93,8 +93,17 @@ st.markdown("""
 # Strategic Project Monitoring Section
 if session_state.page_number == 1:
     st.sidebar.markdown(
+        """
+    <style>
+    .sidebar .sidebar-content {
+        color: #4f6994;
+    """,
+        unsafe_allow_html=True,
+    )
+    st.sidebar.markdown(
         "<h2 style='text-align: center;font-family:sans-serif;'>Valitse <br> strategiaprojekti</h2>",
-        unsafe_allow_html=True)
+        unsafe_allow_html=True,
+    )
     choice = st.sidebar.selectbox("", menu1)
 
     row04_space1, row04_1, row04_2 = st.beta_columns([1, 2, 0.5])
