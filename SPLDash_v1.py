@@ -13,7 +13,6 @@ import plotly.graph_objects as go
 import plotly.express as px
 import matplotlib.pyplot as plt
 import numpy as np
-from load_css import local_css
 import SessionState
 import openpyxl
 
@@ -28,6 +27,32 @@ menu3 = ["---", "Pelaajakehitys", "Erotuomari-toiminnan järjestäminen", "Kilpa
          "Valmentajien koulutus ja osaamisen kehittäminen", "Sidosryhmäyhteistyö ja –vaikuttaminen",
          "Myynti ja markkinointi", "Olosuhteiden rakennuttaminen ja ylläpito", "Tukitoiminta"]
 
+def local_css(file_name):
+    """
+    This function will add css file to streamlit app.
+    Write html-code to streamlit app.
+
+    Parameters
+    ----------
+    file_name : string
+        Path to file.
+    Returns
+    -------
+    None.
+    """
+    with open(file_name) as file:
+        st.markdown(
+            f'<style type="text/css">{file.read()}</style>',
+            unsafe_allow_html=True
+        )
+
+
+local_css("style.css")
+st.markdown(
+    '',
+    unsafe_allow_html=True
+    )
+
 # Page layout
 st.set_page_config(
     page_title="SPL Dashboard",
@@ -35,7 +60,7 @@ st.set_page_config(
     layout='wide',
     initial_sidebar_state='auto'
     )
-local_css("style.css")
+
 
 # Home Page
 # Title banner
