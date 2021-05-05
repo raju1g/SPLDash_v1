@@ -47,12 +47,6 @@ def local_css(file_name):
         )
 
 
-local_css("style.css")
-st.markdown(
-    '',
-    unsafe_allow_html=True
-    )
-
 # Page layout
 st.set_page_config(
     page_title="SPL Dashboard",
@@ -61,6 +55,11 @@ st.set_page_config(
     initial_sidebar_state='expanded'
     )
 
+local_css("style.css")
+st.markdown(
+    '',
+    unsafe_allow_html=True
+    )
 
 # Home Page
 # Title banner
