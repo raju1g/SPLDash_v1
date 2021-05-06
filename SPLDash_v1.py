@@ -147,20 +147,20 @@ if session_state.page_number == 1:
                    textposition="inside", textangle=0,
                    textfont_color="white", marker_color='#2ca02c'))
         fig_01.add_trace(
-            go.Bar(x=x_01, y=[1], name='Hävi', texttemplate="<b>%{y}</b>",
+            go.Bar(x=x_01, y=[1], name='Häviö', texttemplate="<b>%{y}</b>",
                    hovertemplate="<b>1. Nettisivut: Kävijämäärät</b><br>",
                    textposition="inside", textangle=0,
                    textfont_color="white", marker_color='#d62728'))
         fig_01.add_trace(
-            go.Bar(x=x_01, y=[1], name='Jatkuva', texttemplate="<b>%{y}</b>",
+            go.Bar(x=x_01, y=[1], name='Tasapeli', texttemplate="<b>%{y}</b>",
                    hovertemplate="<b>1. Tulospalvelu: Käyttäjäkokemukset</b><br>",
                    textposition="inside", textangle=0,
                    textfont_color="#4f6994", marker_color='yellow'))
         fig_01.add_trace(
-            go.Bar(x=x_01, y=[5], name='Aloita',
+            go.Bar(x=x_01, y=[5], name='Kesken',
                    texttemplate="<b>%{y}</b>",
-                   hovertemplate="<b>1. Pelipaikka: Seurojen tyytyväisyys Pelipaikan käyttöön<br><br> "
-                                 "2. Pelipaikka: Tukipyyntöjen lukumäärä suhteessa rekisteröinteihin<br><br>"
+                   hovertemplate="<b>1. Pelipaikka: Seurojen tyytyväisyys <br>Pelipaikan käyttöön<br><br> "
+                                 "2. Pelipaikka: Tukipyyntöjen lukumäärä <br>suhteessa rekisteröinteihin<br><br>"
                                  "3. Nettisivut: Tyytyväisyys nettisivuihin<br><br>"
                                  "4. Tulospalvelu: Käytettävissä<br><br>"
                                  "5. Nettisivut: Kävijämäärät</b>",
