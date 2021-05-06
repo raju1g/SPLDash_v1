@@ -159,8 +159,8 @@ if session_state.page_number == 1:
         fig_01.add_trace(
             go.Bar(x=x_01, y=[5], name='Kesken',
                    texttemplate="<b>%{y}</b>",
-                   hovertemplate="<b>1. Pelipaikka: Seurojen tyytyväisyys <br>Pelipaikan käyttöön<br><br> "
-                                 "2. Pelipaikka: Tukipyyntöjen lukumäärä <br>suhteessa rekisteröinteihin<br><br>"
+                   hovertemplate="<b>1. Pelipaikka: Seurojen <br>tyytyväisyys Pelipaikan käyttöön<br><br> "
+                                 "2. Pelipaikka: Tukipyyntöjen <br>lukumäärä suhteessa rekisteröinteihin<br><br>"
                                  "3. Nettisivut: Tyytyväisyys nettisivuihin<br><br>"
                                  "4. Tulospalvelu: Käytettävissä<br><br>"
                                  "5. Nettisivut: Kävijämäärät</b>",
