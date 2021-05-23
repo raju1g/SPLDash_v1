@@ -7,14 +7,13 @@ Created on Tue May 11 12:30:14 2021
 import streamlit as st
 import header as he
 import utils
-from utils import image_to_bytes
 import plotly.graph_objects as go
 import plotly.express as px
-from ProcessingScript import excel_cleaner
 from models import Indicator, IndicatorType, IndicatorCards
 import pandas as pd
 import numpy as np
 import openpyxl
+
 
 spm_menu = ["---", "Projekti 1 - Parannamme Palloliiton perusjärjestelmien ja verkkopalvelujen käytettävyyttä",
          "Projekti 2", "Projekti 3", "Projekti 4", "Projekti 5"]
