@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 
 :root {
-    --main-header-font-family: 'Oswald', sans-serif;
-    --main-primary: white;
+    --main-header-font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+    --main-primary: #224B90;
     --main-dark: #3E758A;
     --main-light: #02CEE3;
     --main-yellow: #F2C94C;
@@ -12,8 +12,6 @@
     --main-magenta: #fffbfa;
     --main-white: #fff;
     --main-black: #252729;
-    --main-simulator-beds-card-bg: #D2F5F9;
-    --main-simulator-icu-beds-card-bg: #98ecf5;
     --main-margin: 2em;
     --main-item-margin: 1em;
     --main-padding: 2em;
@@ -39,7 +37,7 @@
 
 /* default background colors */
 .primary-bg {
-    background-color: var(--main-primary);
+    background-color: #E2E2E2;
 }
 
 .saude-blue-bg {
@@ -89,17 +87,6 @@
     background-color: var(--main-light-red);
 }
 
-/* .simulator-card-bg {
-    background-color: var(--main-simulator-card-bg)
-} */
-
-.simulator-beds-card-bg {
-    background-color: var(--main-simulator-beds-card-bg);
-}
-
-.simulator-icu-beds-card-bg {
-    background-color: var(--main-simulator-icu-beds-card-bg);
-}
 
 /* default span colors */
 .grey-span {
@@ -115,7 +102,7 @@
 }
 
 .white-span {
-    color: var(--main-primary);
+    color: var(--main-white);
 }
 
 .primary-span{
@@ -369,7 +356,7 @@ header>.toolbar { /* Hide toolbar menu */
 }
 
 .sidebar.--collapsed .sidebar-collapse-control{
-    border-radius:10rem;
+    border-radius:.75rem;
 }
 
 .sidebar-collapse-control::after{
@@ -383,6 +370,7 @@ header>.toolbar { /* Hide toolbar menu */
     padding: 3rem;
     box-sizing: border-box;
 }
+
 
 /* Base components
 .bigger-wrapper {
@@ -469,6 +457,7 @@ header>.toolbar { /* Hide toolbar menu */
 
 .subpages-container-product {
     font-family: var(--main-header-font-family);
+    text-align: center;
     text-transform: uppercase;
     font-size: 56px;
     font-weight: bold;
@@ -479,8 +468,8 @@ header>.toolbar { /* Hide toolbar menu */
 
 .subpages-subcontainer-product {
     font-family: var(--main-header-font-family);
+    text-align: center;
     font-size: 56px;
-    font-weight: bold;
     line-height: 64px;
     animation-name: fadein;
     animation-duration: 4s;
@@ -494,7 +483,7 @@ header>.toolbar { /* Hide toolbar menu */
 .subpages-container-image {
     margin-left: auto;
     margin-right: auto;
-    max-width: 500px;
+    max-width: 1024px;
     height: 80%;
     background-color:white;
     border-radius:15px;
@@ -629,7 +618,7 @@ header>.toolbar { /* Hide toolbar menu */
     padding: 0.5em;
     text-transform: uppercase;
     font-family: var(--main-header-font-family);
-    background-color: var(--main-primary);
+    background-color: white;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
@@ -745,112 +734,6 @@ header>.toolbar { /* Hide toolbar menu */
     }
 }
 
-/* Simulation Output - Banner Style */
-.chart-simulator-instructions {
-    margin: 0 0;
-}
-
-.simulator-header {
-    margin-top: 1em;
-    display: flex;
-    flex-direction: column;
-}
-
-.simulator-wrapper {
-    margin-top: 2em;
-    display: flex;
-    flex-direction: column;
-    margin-left: var(--main-item-margin);
-}
-
-.simulation-scenario-header-container {
-    margin: var(--main-item-margin) 0;
-    display: flex;
-}
-
-.simulator-scenario-header {
-    font-family: var(--main-header-font-family);
-    font-weight: bold;
-    font-size: 24px;
-    padding: 0 var(--minor-padding);
-    border-radius: 5px;
-    
-}
-
-
-.simulator-container {
-    display: flex;
-    flex-direction: row;
-    padding: var(--main-padding);
-    border-radius: var(--main-border-radius);
-    box-shadow: 0px 5px 5px var(--main-grey);
-    align-items: center;
-    max-width: 730px;
-}
-
-.simulator-output-wrapper {
-    display: flex;
-    flex-direction: column;
-} 
-
-.simulator-output-timeframe {
-    font-weight: lighter;
-    font-size: 24px
-}
-
-.simulator-output-row {
-    display: flex;
-    flex-direction: row;   
-    /* justify-content: space-around; */
-    align-items: center;
-    /* margin: var(--main-item-margin) 0; */
-}
-
-.simulator-output-image {
-    width: 180px;
-    height: 180px;
-    margin-left: auto;
-
-}
-
-.simulator-output-row-prediction-value {
-    font-size: 48px;
-    font-weight: bold;
-    word-wrap: no-wrap;   
-    animation-name: fadein;
-    animation-duration: 5s;
-}
-
-.simulator-output-row-prediction-separator {
-    font-weight: 300;
-    font-size: 16px;
-}
-
-.simulator-output-row-prediction-label {
-    font-weight: lighter;
-    font-size: 24px;
-}
-
-@media only screen and (max-width: 425px) {
-
-    .simulator-output-timeframe {
-        font-size: 18px;
-    }
-    .simulator-output-row-prediction-label {
-        font-weight: lighter;
-        font-size: 16px;
-    }
-
-    .simulator-output-row-prediction-value {
-        font-size: 36px;
-    }
-    .simulator-output-image {
-        width: 90px;
-        height: 90px;
-    }
-}
-
-
 /* Scenario Row */
 
 .scenario-cards-container {
@@ -953,14 +836,14 @@ header>.toolbar { /* Hide toolbar menu */
     }
 }
 
-.sidebar .sidebar-collapse-control {
-    background-color: #022B7E;
-    padding: 1em;
+.sidebar-collapse-control {
+    background-color: var(--main-primary);
+    padding: 0.5em;
     color: white;
 }
 
-.sidebar .sidebar-collapse-control::after {
-    content: "Valitse";
+.sidebar-collapse-control::after {
+    content: "Moduuli";
 }
 
 .team-logo {
@@ -1133,7 +1016,7 @@ header>.toolbar { /* Hide toolbar menu */
 
 .info-header {
     font-weight: bold !important;
-    color: var(--main-primary);
+    color: white;
     font-size: 10px;
     margin-top: 2px;
     margin-left: -25px !important;
@@ -1163,8 +1046,8 @@ header>.toolbar { /* Hide toolbar menu */
 }
   
 .info-btn:hover {
-    color: white;
-    background-color: var(--main-primary);
+    color: var(--main-primary);
+    background-color: white;
     text-decoration: none;
 }
 
@@ -1255,6 +1138,52 @@ header>.toolbar { /* Hide toolbar menu */
     width: 90%;
     height: auto;
     /* margin-left: 1rem; */
+}
+
+/* Streamlit button horizontal settings */
+
+div.row-widget.stButton {
+    margin: 0 auto;
+    padding: 0px;
+    text-align: center;
+    vertical-align: bottom;
+  }
+
+div.stButton > button:active {
+    box-shadow: none;
+    background-color: white;
+    font-color: white;
+    color: white;
+}
+
+div.stButton > button:hover {
+    background-color: #224B90;
+    color: white;
+}
+
+.stButton > button {
+    margin: 0 auto;
+    border-top: 1px solid #224B90;
+    border-left: 1px solid #224B90;
+    border-right: 1px solid #224B90;
+    border-bottom: 1px solid #224B90;
+    height: 2.2rem;
+    width: 50%;
+    position: relative;
+    left: 10px;
+    top: 100px;
+    background-color: #224B90;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    line-height: 0.8rem;
+    font-size: 1.5rem;
+    font-weight: 100;
+    border-radius: 0px 0px 0px 0px;
+    overflow-x: hidden;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
 }
 
 
@@ -2750,7 +2679,7 @@ header>.toolbar { /* Hide toolbar menu */
 #navbar {
     overflow: hidden;
     background-color: white;
-    border: #0090A7;
+    border: #224B90;
   }
   
   #navbar a {
@@ -2769,7 +2698,11 @@ header>.toolbar { /* Hide toolbar menu */
   }
   
   #navbar a.active {
-    background-color: #0090A7;
+    background-color: #224B90;
     color: white;
   }
 
+/* set radio buttons in same line */
+div.row-widget.stRadio > div { flex-direction:row; }
+div.row-widget.stRadio > label { font-size: 1.1rem; color: #224B90;}
+div.row-widget.stRadio > div > label > div { font-size: 1.1rem; color: #224B90;}
