@@ -10,7 +10,7 @@ def genHeader(active):
     if os.getenv("IS_HEROKU") == "TRUE":
         urlpath = os.getenv("urlpath")
     else:
-        urlpath = 'https://share.streamlit.io/raju1g/spldash_v1/main/SPLDash_v1.py'
+        urlpath = 'https://share.streamlit.io/raju1g/spldash_v1/main/SPLDash_v1.py/'
 
     if active == "1":
         st.write(
