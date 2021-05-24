@@ -367,7 +367,7 @@ header>.toolbar { /* Hide toolbar menu */
 }  */
 /* Base components */
 .base-wrapper {
-    padding: 3rem;
+    padding: 2rem;
     box-sizing: border-box;
 }
 
@@ -468,15 +468,50 @@ header>.toolbar { /* Hide toolbar menu */
 
 .subpages-subcontainer-product {
     font-family: var(--main-header-font-family);
+    margin-top: 0.5em;
     text-align: center;
-    font-size: 56px;
+    font-size: 45px;
     line-height: 64px;
     animation-name: fadein;
     animation-duration: 4s;
 }
+
+.subpages-subcontainer-product1 {
+    font-family: var(--main-header-font-family);
+    color: #022B7E;
+    margin-top: 0.5em;
+    text-align: center;
+    font-size: 45px;
+    line-height: 64px;
+    animation-name: fadein;
+    animation-duration: 4s;
+}
+
+
+subpages-subcontainer-product2 {
+    font-family: var(--main-header-font-family);
+    color: #022B7E;
+    margin-top: 0.5em;
+    text-align: center;
+    font-size: 40px;
+    line-height: 64px;
+    animation-name: fadein;
+    animation-duration: 4s;
+}
+
 .subpages-container-subtitle {
     font-weight: lighter;
+    color: #022B7E;
+    text-align: center;
     font-size: 26px;
+    padding-top: 20px;
+}
+
+.subpages-container-subtitle2 {
+    font-weight: lighter;
+    color: #022B7E;
+    text-align: center;
+    font-size: 13px;
     padding-top: 20px;
 }
 
@@ -1140,6 +1175,16 @@ header>.toolbar { /* Hide toolbar menu */
     /* margin-left: 1rem; */
 }
 
+.vl {
+  border-left: 1px solid blue;
+  opacity: 0.75;
+  height: 500px;
+  position: absolute;
+  left: 100%;
+  margin-left: 0px;
+  top: 0;
+}
+
 /* Streamlit button horizontal settings */
 
 div.row-widget.stButton {
@@ -1147,6 +1192,7 @@ div.row-widget.stButton {
     padding: 0px;
     text-align: center;
     vertical-align: bottom;
+    flex-direction: column;
   }
 
 div.stButton > button:active {
@@ -1162,13 +1208,13 @@ div.stButton > button:hover {
 }
 
 .stButton > button {
-    margin: 0 auto;
+    margin-top: 0.75em;
     border-top: 1px solid #224B90;
     border-left: 1px solid #224B90;
     border-right: 1px solid #224B90;
     border-bottom: 1px solid #224B90;
-    height: 2.2rem;
-    width: 50%;
+    height: 2rem;
+    width: auto;
     position: relative;
     left: 10px;
     top: 100px;
@@ -1177,9 +1223,9 @@ div.stButton > button:hover {
     text-transform: uppercase;
     letter-spacing: 0.8px;
     line-height: 0.8rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 100;
-    border-radius: 0px 0px 0px 0px;
+    border-radius: 5px 5px 5px 5px;
     overflow-x: hidden;
     transition: all 0.3s ease 0s;
     cursor: pointer;

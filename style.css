@@ -2773,3 +2773,49 @@ header>.toolbar { /* Hide toolbar menu */
     color: white;
   }
 
+  /* Streamlit button horizontal settings */
+
+div.row-widget.stButton {
+    margin: 0 auto;
+    padding: 0px;
+    text-align: center;
+    vertical-align: bottom;
+  }
+
+div.stButton > button:active {
+    box-shadow: none;
+    background-color: white;
+    font-color: white;
+    color: white;
+}
+
+div.stButton > button:hover {
+    background-color: #224B90;
+    color: white;
+}
+
+.stButton > button {
+    margin: 0 auto;
+    border-top: 1px solid #224B90;
+    border-left: 1px solid #224B90;
+    border-right: 1px solid #224B90;
+    border-bottom: 1px solid #224B90;
+    height: 2.2rem;
+    width: 25%;
+    position: relative;
+    left: 10px;
+    top: 100px;
+    background-color: #224B90;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    line-height: 0.8rem;
+    font-size: 0.5rem;
+    font-weight: 100;
+    border-radius: 5px 5px 5px 5px;
+    overflow-x: hidden;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
