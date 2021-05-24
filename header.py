@@ -33,8 +33,8 @@ def genHeader(active):
                 <a class="active" href="{urlpath}?page=spm">Strategiaprojektit</a>
                 <a href="{urlpath}?page=psm">Mittarit ja tunnusluvut</a>
                 </div>
-            """,
-        unsafe_allow_html=True,
+                """,
+            unsafe_allow_html=True,
         )
     elif active == "2":
         st.write(
@@ -45,8 +45,8 @@ def genHeader(active):
                 <a href="{urlpath}?page=spm">Strategiaprojektit</a>            
                 <a class="active" href="{urlpath}?page=psm">Mittarit ja tunnusluvut</a>
                 </div>
-            """,
-        unsafe_allow_html=True,
+                """,
+            unsafe_allow_html=True,
         )
 
 
