@@ -27,24 +27,24 @@ def genHeader(active):
     if active == "1":
         st.write(
             f"""
-            <div class="conteudo" id="navbar">
-            <a>&nbsp;</a>
-			<a href="{urlpath}?page=initial">Koti</a>
-            <a class="active" href="{urlpath}?page=spm">Strategiaprojektit</a>
-            <a href="{urlpath}?page=psm">Mittarit ja tunnusluvut</a>
-            </div>
+                <div class="conteudo" id="navbar">
+                <a>&nbsp;</a>
+                <a href="{urlpath}?page=initial">Koti</a>
+                <a class="active" href="{urlpath}?page=spm">Strategiaprojektit</a>
+                <a href="{urlpath}?page=psm">Mittarit ja tunnusluvut</a>
+                </div>
             """,
         unsafe_allow_html=True,
         )
-    elif active=="2":
+    elif active == "2":
         st.write(
             f"""
-            <div class="conteudo" id="navbar">
-            <a>&nbsp;</a>
-			<a href="{urlpath}?page=initial">Koti</a>
-            <a href="{urlpath}?page=spm">Strategiaprojektit</a>            
-            <a class="active" href="{urlpath}?page=psm">Mittarit ja tunnusluvut</a>
-            </div>
+                <div class="conteudo" id="navbar">
+                <a>&nbsp;</a>
+                <a href="{urlpath}?page=initial">Koti</a>
+                <a href="{urlpath}?page=spm">Strategiaprojektit</a>            
+                <a class="active" href="{urlpath}?page=psm">Mittarit ja tunnusluvut</a>
+                </div>
             """,
         unsafe_allow_html=True,
         )
