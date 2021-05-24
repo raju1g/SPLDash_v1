@@ -20,7 +20,7 @@ st.set_page_config(
     page_title='SPL Dashboard',
     page_icon='images/favicon.ico',
     layout='wide',
-    initial_sidebar_state='expanded'
+    initial_sidebar_state='collapsed'
 )
 
 utils.local_css('style.css')
