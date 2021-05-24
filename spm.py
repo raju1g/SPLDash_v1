@@ -31,7 +31,6 @@ tavoitteet_menu = ["---", "Tulospalvelu", "Pelipaikka", "Nettisivut"]
 
 def main(session_state):
     utils.localCSS("style_new2.css")
-    he.genHeader("1")
     st.write(
         f"""
             <div class="base-wrapper" style="background-color:#224B90;">
